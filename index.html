@@ -11,16 +11,27 @@
         margin:auto;
     }
     #welcome-section {
-        padding: 7em;
+        padding: 10em;
         color: dimgrey;
         transform: rotate(5deg);
     }
-    .content {
-        width: 100%;
-        text-align: center;
-        margin-top: 10%;
-    }
     .about-me_all {
+        background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+        height: 1080px;
+        background-size: cover;
+    }
+    #about_me {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-image: linear-gradient(to right, #CCFFFF, #FFCCCC);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2px;
+    }
+    .about-me_content {
         display: flex;
         width: 70%;
         margin: auto;
@@ -29,16 +40,69 @@
         width: 50%;
         min-height: 300px;
         margin-top: 5%;
-        color: dimgrey;
-        border:-2px;
+        color: #404040;
+        border: -2px;
     }
     .about-me_hitari {
         width: 50%;
         text-align: center;
         min-height: 300px;
-        margin-top: 5%;
-        color:blanchedalmond;
+        mix-blend-mode: multiply;
     }
+    .experience_all {
+        height: 1080px;
+        margin-top: -5%;
+        background-size: cover;
+    }
+    #experience_title {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-image: linear-gradient(to right, #CCFFFF, #FFCCCC);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2px;
+    }
+    .experience_content {
+        display: flex;
+        width: 70%;
+        margin: auto;
+    }
+    .experience1 {
+
+    }
+    .skill {
+        padding: 20rem 10rem;
+        background-image: linear-gradient(to right bottom, rgba(176, 192, 215, 0.8), rgba(85, 120, 170, 0.8));
+        background-size: cover;
+        margin-top: 10rem;
+    }
+    .my_skill {
+        display: flex;
+        -webkit-box-pack: center;
+        place-content: center;
+        align-items: flex-start;
+        max-width: 114rem;
+        margin: 0px auto;
+    }
+    .language {
+        background: linear-gradient(115deg, rgba(15, 88, 151, 0.38), rgba(255, 204, 204, 0.38));
+        width: 30%;
+        height: 50%;
+    }
+    .website {
+        background: linear-gradient(115deg, rgba(15, 88, 151, 0.38), rgba(255, 204, 204, 0.38));
+        width: 30%;
+        height: 50%;
+    }
+    .document {
+        background: linear-gradient(115deg, rgba(15, 88, 151, 0.38), rgba(255, 204, 204, 0.38));
+        width: 30%;
+        height: 50%;
+    }
+    
 </style>
 <html lang="zh-Hant-TW">
 <head>
@@ -47,34 +111,59 @@
 </head>
 
 <body>
-    <div class="header">
+    <section class="header">
         <h1 id="welcome-section">
             Hello, I'm Mako
         </h1>
-    </div>
-    <div class="content">
-        <h1 id="about_me">
-            關於我
-        </h1>
-    </div>
-    <div class="about-me_all">
-        <div class="about-me_hitari">
-            <img src="resume_photo.jpg"alt="My Photo" />
+    </section>
+    <section class="about-me_all">
+        <div id="about_me" >
+            <h1>
+                <br />
+                關於我
+            </h1>
         </div>
-        <div class="about-me_migi">
-            <h3>脫離舒適圈，挑戰不同領域</h3>
-            <h4>就讀於 世新大學 數位多媒體設計學系 遊戲設計組</h4>
-            <h5>
-                即將成為大四學生，在就學過程中，啟發了對網頁的興趣從
-                零開始學習前端開發相關技能，選修校內相關課程，也運用
-                網路資源精進自己。<br /><br />
-                目前使用github進行畢業製作的團隊合作<br /><br />
-                在free code camp學習所需知識，也透過其他網站，如Udemy
-                學習，並加入各社團精進自己。
-            </h5>
+        <div class="about-me_content">
+            <div class="about-me_hitari">
+                <img src="resume_photo.jpg" alt="My Photo" style="border-radius: 150px;" />
+            </div>
+            <div class="about-me_migi">
+                <h3 style="color: #ff6363;">脫離舒適圈，挑戰不同領域</h3>
+                <h4>就讀於 世新大學 數位多媒體設計學系 遊戲設計組</h4>
+                <h5>
+                    即將成為大四學生，在就學過程中，啟發了對網頁的興趣從
+                    零開始學習前端開發相關技能，選修校內相關課程，也運用
+                    網路資源精進自己。<br /><br />
+                    目前使用github進行畢業製作的團隊合作<br /><br />
+                    在free code camp學習所需知識，也透過其他網站，如Udemy
+                    學習，並加入各社團精進自己。
+                </h5>
+            </div>
         </div>
-    </div>
-    
+    </section>
+    <section class="experience_all">
+        <div id="experience_title">
+            <h1><br />經歷</h1>
+        </div>
+        <div class="experience_content">
+            <div class="experience1">
+                2019-2021  <p>飲料店及藥妝店工讀</p>
+            </div>
+        </div>
+    </section>
+    <section class="skill">
+        <div class="my_skill">
+            <div class="language">
+                123
+            </div>
+            <div class="website">
+                456
+            </div>
+            <div class="document">
+                789
+            </div>
+        </div>
+    </section>
     <div class="center"></div>
     <div class="back"></div>
     <div class="heart"></div>
