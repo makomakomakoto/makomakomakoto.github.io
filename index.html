@@ -1,144 +1,175 @@
 <!DOCTYPE html>
-
-</style>
-<html lang="en">
+<html lang="zh_Hant">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第十屆術法大比</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mako">
+    <meta name="description" content="嗨，我是Mako，我正朝著前端工程師的方向前進！">
+    <link rel="stylesheet" href="./welcome/styles/style.css">
+    <title>Mako's portfolio</title>
+    <!-- <base target="_blank"/> -->
 </head>
 <body>
-    <div class="drop"></div>
-    <div class="drop2"></div>
-    <div class="drop3"></div>
-    <div class="drop4"></div>
-    <div class="container">
-        <div class="header1">
-            <header>
-                <nav class="aaa">
-                    <div class="shape-ex11"><p><a href="#section1">第十屆術法大比</a></p></div>
-                    <div class="shape-ex11"><p><a href="#section2">報名表</a></p></div>
-                    <div class="shape-ex11"><p><a href="#section3">留言</a></p></div>
-                    <div class="shape-ex11"><p><a href="#section4">管事登入</a></p></div>
-                </nav>
-            </header>
+  <!-- Navbar Section -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">By Mako</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <div class="content" id="section1">
-            <h1>第十屆術法大比</h1>
-            <div class="link-top"></div>
-            <p>
-                <h3>簡&nbsp;&nbsp;介</h3>
-                三十年一度，延請各大仙尊到場，使弟子們互相切磋之盛事。
-                <h3>宗&nbsp;&nbsp;旨</h3>
-                須知人外有人，天外有天。以良性之競爭，增進各大門派間之情誼。並使青年弟子們互相敦促努力。
-                <h3>日&nbsp;&nbsp;程</h3>
-                參賽弟子及其同行親友(至多四人)之食宿，由本次主辦門派&nbsp;天海門全程接待，為期約為十日。<br>
-                參賽弟子須於第二日卯時前至天海門報到，逾時不候。<br>
-                <ul class="li1">
-                    <li>第一日：開幕儀式</li>
-                    <li>第二日：辰時起為初賽</li>
-                    <li>第三至第五日：第三日辰時起為複賽，每日申時三刻結束當日擂台，每日勝者於隔日接續</li>
-                    <li>第六至第九日：第六日辰時起為決賽，築基、金丹、元嬰、化神依順序各一日</li>
-                    <li>第十日：頒獎儀式</li>
-                </ul>
-                完賽之弟子或可先行離去。
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#skill" class="navbar__links" id="skill-page">Skill</a>
+          </li>
+          <li class="navbar__item">
+              <a href="#portfolio" class="navbar__links" id="portfolio-page">Portfolio</a>
+            </li>
+          <li class="navbar__btn">
+            <a href="#contact" class="button" id="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-                <h3>賽&nbsp;&nbsp;制</h3>
-                以修為分組，每組依人數多寡分為數個擂台。
-                <ul class="li2">
-                    <li>初賽：採取混戰模式，最終留於擂台內之十人獲勝</li>
-                    <li>複賽：採取車輪戰模式，同修為之數個擂台皆可挑戰，以三天為限，最後於擂台勝出者勝</li>
-                    <li>決賽：由主持長老抽出對手、順序以及時程，兩兩比過，決出最終勝者</li>
-                </ul>
-                <h3>獎&nbsp;&nbsp;勵</h3>
-                <ul class="li3">
-                    <li>第一：法器閣內同階法器任選一柄，及靈丹數顆，可入天海門聖水池七日</li>
-                    <li>第二：法器閣內同階法器任選一柄，及靈丹數顆</li>
-                    <li>第三：法器閣內同階法器任選一柄</li>
-                    <li>其餘進入決賽之弟子，皆贈極品靈石數顆</li>
-                </ul>  
-                <h3>規&nbsp;&nbsp;則</h3>
-                <ul class="li4">
-                    <li>若對手已遭判定失去攻擊能力，則不可追擊</li>
-                    <li>若裁判示意停下，則不可做出攻擊</li>
-                    <li>禁止使用禁術以及劇毒</li>
-                    <li>觀戰者禁止進入結界範圍</li>
-                    <li>導致對手身亡屬情節重大</li>
-                    <li>情節重大者得暫關押於天海閣，聽從眾位仙尊決議之懲處</li>
-                </ul>
-            </p>
-            <br>
-            <div class="link-top"></div>
-            <br>
-            <div id="section2">
-                <h1>第十屆術法大比報名表</h1>
-                <br>
-                <form action="kichuun.php" method="POST">
-                    <p>姓&nbsp;&nbsp;名：<input type="text" name="userName" /></p>
-                    <p>名&nbsp;&nbsp;號：<input type="text" name="userNickname" /></p>
-                    <p>
-                        門&nbsp;&nbsp;派：
-                        <input type="text" name="userHome"/>
-                    </p>
-                    <p>通&nbsp;訊&nbsp;號：<input type="text" name="userPhone" /></p>
-                    <p id="radio">
-                        修&nbsp;&nbsp;為&nbsp;(練氣期請勿報名)：
-                        <label><input type="radio" name="userAge" value="築基" /><span class="round button">築基</span></label>
-                        <label><input type="radio" name="userAge" value="金丹" /><span class="round button">金丹</span></label>
-                        <label><input type="radio" name="userAge" value="元嬰" /><span class="round button">元嬰</span></label>
-                        <label><input type="radio" name="userAge" value="化神" /><span class="round button">化神</span></label>
-                    </p>
-                    <p id="radio">
-                        同&nbsp;行&nbsp;人&nbsp;數：
-                        <label><input type="radio" name="userPeo" value="0" /><span class="round button">0</span></label>
-                        <label><input type="radio" name="userPeo" value="1" /><span class="round button">1</span></label>
-                        <label><input type="radio" name="userPeo" value="2" /><span class="round button">2</span></label>
-                        <label><input type="radio" name="userPeo" value="3" /><span class="round button">3</span></label>
-                        <label><input type="radio" name="userPeo" value="4" /><span class="round button">4</span></label>
-                    </p>
-                    <p><input class="shape-ex11" type="submit" value="提交" /></p>
-                    <p><input class="shape-ex11" type="reset" value="清空" /></p>
-                </form>
-            </div>
-            <br>
-            <br>
-            <div class="link-top"></div>
-            <br>
-            <div id="section3">
-                <h1>留言</h1>
-                <br>
-                <form action="kichuun3.php" method="POST">
-                    <p>姓&nbsp;&nbsp;名：<input type="text" name="userName" /></p>
-                    <p>信&nbsp;&nbsp;箱：<input type="text" name="userMail" /></p>
-                    <p>
-                        留&nbsp;&nbsp;言：<br>
-                        <textarea name="userTalk" cols="50" rows="4" Wrap="Physical" ></textarea>
-                    </p>
-                    <p><input class="shape-ex11" type="submit" value="提交" /></p>
-                    <p><input class="shape-ex11" type="reset" value="清空" /></p>
-                </form>
-            </div>
-            <br>
-            <br>
-            <div class="link-top"></div>
-            <br>
-            <div id="section4">
-                <form action="kichuun2.php" method="POST">
-                    <fieldset>
-                    <legend><h1>管事登入</h1></legend>
-                    <p>編&nbsp;&nbsp;號：<input type="text" name="userNum" /></p>
-                    <p>密&nbsp;&nbsp;鑰：<input type="text" name="userPhone" /></p>
-                    <p><input class="shape-ex11" type="submit" value="登入" /></p>
-                    <br>
-                </fieldset>
-                </form>
-            </div>
-            <br>
-            <br>
-        </div>
-        
+  <!-- Welcome -->
+  <section class="welcomeAni">
+    <div class="welContainer">
+      <div class="welContent">
+        <h3>Hello, I'm Mako</h3>
+        <p>您好，我是許芸瑄 Mako。</p>
+      </div>
     </div>
+  </section>
+
+  <main>
+  <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Hello, I'm Mako</h3>
+        <p>您好，我是許芸瑄 Mako。</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h1 class="heading"> <span>about</span> me </h1>
+
+      <div class="row">
+        <div class="imgcontainer">
+          <img src="./welcome/resume_photo.jpg" alt="">
+          <div class="bg"></div>
+          
+        </div>
+
+        <div class="content">
+            <h3>正朝著前端工程師的目標前進</h3>
+            <ul>
+              <li>世新大學 數位多媒體設計學系</li>
+              <li>遊戲設計組 應屆畢業生</li>
+              <li>修習系上前端相關課程，也於Udemy購買課程學習</li>
+              <li>目前正擔任QA工讀生</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section -->
+    <section class="skills" id="skill">
+      <h1 class="heading">My <span>skills</span></h1>
+      <br>
+      <div class="skillCotainer">
+        <div class="skillCard">
+          <div class="skills">
+            <p>HTML5</p>
+            <P>CSS3</P>
+            <P>SCSS</P>
+          </div>
+        </div>
+        <div class="skillCard">
+          <div class="skills">
+            <p>Unity2D</p>
+          </div>
+        </div>
+        <div class="skillCard">
+          <div class="skills">
+            <p>Adobe XD</p>
+          </div>
+        </div>
+        <div class="skillCard">
+          <div class="skills">
+            <p>Gitlab</p>
+            <p>Github</p>
+          </div>
+        </div>
+        <div class="skillCard">
+          <div class="skills">
+            <p>Word</p>
+            <p>Excel</p>
+            <p>Power Point</p>
+          </div>
+        </div>
+        <div class="skillCard">
+          <div class="skills">
+            <p>中文精通</p>
+            <p>英語中等</p>
+            <p>日語初階</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading"> My<span> portfolio</span> </h1>
+
+      <div class="box-container">
+        <div class='box'></a>
+          <div class='image'>
+            <a href="./mako/main.html" target="_blank"><img src='./mako/image/category-1.jpg' alt=''></a>
+            <div class='content'>
+              <a href="./mako/main.html" target="_blank"><h3>相片沖洗網站</h3></a>
+            </div>
+          </div>
+          
+        </div>
+        <div class='box'></a>
+          <div class='image'>
+            <a href="./Hotel/index.html" target="_blank"><img src='./Hotel/img/lobby.jpg' alt=''></a>
+            <div class='content'>
+              <a href="#"><h3>飯店介紹網站</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+      <h1 class="heading"><span> contact</span> me</h1>
+      <div class="box-container">
+        <div class="box">
+          <h3>信箱：sally81506@gmail.com</h3>
+          <br>
+          <div class="navbar__btn">
+            <a href="mailto:sally81506@gmail.com" class="button">Email Me</a>
+          </div>
+        </div>
+      </div>
+  </footer>
+    <script src="./welcome/script.js"></script>
 </body>
 </html>
