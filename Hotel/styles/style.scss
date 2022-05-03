@@ -17,6 +17,9 @@ $p:rgb(153, 153, 153);
     scroll-behavior: smooth;
     text-decoration: none;
 }
+::-webkit-scrollbar {
+    display: none;
+    }
 html{
     overflow-x: hidden;
     scroll-padding-top: 9rem;
@@ -153,6 +156,7 @@ section.lobbySection{
                 button:hover{
                     box-shadow: inset 0 -3.25em 0 0 $link-hover;
                     color: $main-color;
+                    cursor: pointer;
                 }
             }
         }
@@ -208,6 +212,7 @@ section.aboutSection{
             button:hover{
                 box-shadow: inset 0 -3.25em 0 0 $link-hover;
                 color: $news-bg;
+                cursor: pointer;
             }
         }
 
@@ -253,31 +258,47 @@ section.newSection{
             flex-wrap: wrap;
             justify-content: space-around;
 
-            .card{
-                width: 320px;
-                height: 200px;
-                padding: 1rem;
-                margin: 0 1rem 2rem 1rem;
-                background-color: $main-color;
+            a{
                 display: flex;
                 flex-direction: column;
-                box-shadow: rgb(55, 25, 0) 3px 3px 6px 0px inset, 
-                            rgba(55, 25, 0, 0.5) -3px -3px 6px 1px inset;
-
-                a{
-                    color: $navbar-color;
-                    text-align: center;
+                .card{
                     transition: all 0.25s ease-in-out;
+                    width: 320px;
+                    height: 200px;
+                    padding: 1rem;
+                    margin: 0 1rem 2rem 1rem;
+                    background-color: $main-color;
+                    box-shadow: rgb(55, 25, 0) 3px 3px 6px 0px inset, 
+                                rgba(55, 25, 0, 0.5) -3px -3px 6px 1px inset;
+
+                    h3{
+                        color: $navbar-color;
+                        text-align: center;
+                        transition: all 0.25s ease-in-out;
+                    }
+                    p{
+                        color: $link-hover;
+                        transition: all 0.25s ease-in-out;
+                    }
+                    p.time{
+                        text-align: end;
+                        transition: all 0.25s ease-in-out;
+                    }
                 }
-                a:hover{
-                    color: $link-hover;
-                    text-align: center;
-                }
-                p{
-                    color: $link-hover;
-                }
-                p.time{
-                    text-align: end;
+            }
+            a:hover{
+                .card{
+                    background-color: $link-hover;
+
+                    h3{
+                        color: $main-color;
+                    }
+                    p{
+                        color: $main-color;
+                    }
+                    p.time{
+                        color: $main-color;
+                    }
                 }
             }
         }
@@ -354,12 +375,46 @@ section.introduceSection{
                     button:hover{
                         box-shadow: inset 0 -3.25em 0 0 $main-color;
                         color: $link-hover;
+                        cursor: pointer;
                     }
                 }
             }
         }
         .other{
             display: none;
+        }
+        .LR{
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            .arrow {
+                display: block;
+                width: 30px;
+                height: 60px;
+                background-color: rgba(0,0,0,0.4);
+                z-index:999;
+                margin: 0 2rem 2.5rem 1rem;
+
+                span {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-bottom: 2px solid #fff;
+                    border-left: 2px solid #fff;
+                }
+                .slider_left {
+                    margin: 25px 0 0 10px;
+                    transform: rotate(45deg);
+                }
+                .slider_right {
+                    margin: 25px 0 0 10px;
+                    transform: rotate(-135deg);
+                }
+            }
+            .arrow:hover{background:#444;}
         }
     }
 }
@@ -664,6 +719,25 @@ footer{
             }
         }
     }
+
+    section.facilitySection{
+        .facility{
+            .row{
+                .cardOut{
+                    .card{
+                        .content{
+                            opacity: 1;
+                        }
+                    }
+                    .card:hover{
+                        .content{
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 728px) {
@@ -742,6 +816,34 @@ footer{
             }
             .other{
                 display: none;
+            }
+            .LR{
+                justify-content: space-between;
+                .arrow {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: rgba(0,0,0,0.4);
+                    z-index:999;
+                    margin: 0 1rem 2.5rem 1rem;
+    
+                    span {
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-bottom: 2px solid #fff;
+                        border-left: 2px solid #fff;
+                    }
+                    .slider_left {
+                        margin: 10px 0 0 10px;
+                        transform: rotate(45deg);
+                    }
+                    .slider_right {
+                        margin: 10px 0 0 10px;
+                        transform: rotate(-135deg);
+                    }
+                }
+                .arrow:hover{background:#444;}
             }
         }
     }
