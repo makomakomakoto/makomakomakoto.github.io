@@ -133,10 +133,6 @@ header .mobileNavbar {
   display: none;
 }
 
-header .mobileNavbar .nav #mobileNavbar {
-  display: none;
-}
-
 section.lobbySection {
   height: 95vh;
   width: 100vw;
@@ -768,7 +764,7 @@ footer .footer .author h4 a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header .mobileNavbar .nav #mobileNavbar {
+  header .mobileNavbar .nav ul {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -784,19 +780,19 @@ footer .footer .author h4 a:hover {
     top: 45px;
     background-color: white;
   }
-  header .mobileNavbar .nav #mobileNavbar li {
+  header .mobileNavbar .nav ul li {
     list-style: none;
     margin: 1rem 2rem;
   }
-  header .mobileNavbar .nav #mobileNavbar li a.links {
+  header .mobileNavbar .nav ul li a.links {
     color: #ff8d29;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
   }
-  header .mobileNavbar .nav #mobileNavbar li a.links:hover {
+  header .mobileNavbar .nav ul li a.links:hover {
     color: #eeae79;
   }
-  header .mobileNavbar .nav #mobileNavbar li .btn {
+  header .mobileNavbar .nav ul li .btn {
     border-style: dashed;
     padding: 0rem 1rem;
     color: #ff8d29;
@@ -804,7 +800,7 @@ footer .footer .author h4 a:hover {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
-  header .mobileNavbar .nav #mobileNavbar li .btn:hover {
+  header .mobileNavbar .nav ul li .btn:hover {
     -webkit-box-shadow: inset 0 -3.25em 0 0 #eeae79;
             box-shadow: inset 0 -3.25em 0 0 #eeae79;
     color: #492100;

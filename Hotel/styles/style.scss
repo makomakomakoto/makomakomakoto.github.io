@@ -103,11 +103,6 @@ header{
     }
     .mobileNavbar{
         display: none;
-        .nav{
-            #mobileNavbar{
-                display: none;
-            }
-        }
     }
 }
 
@@ -561,7 +556,7 @@ footer{
                 align-items: center;
                 justify-content: center;
 
-                #mobileNavbar{
+                ul{
                     width: 100%;
                     display: flex;
                     flex-direction: column;
