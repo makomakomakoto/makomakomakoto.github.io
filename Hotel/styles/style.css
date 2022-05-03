@@ -133,6 +133,10 @@ header .mobileNavbar {
   display: none;
 }
 
+header .mobileNavbar .nav #mobileNavbar {
+  display: none;
+}
+
 section.lobbySection {
   height: 95vh;
   width: 100vw;

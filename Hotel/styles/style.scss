@@ -103,6 +103,11 @@ header{
     }
     .mobileNavbar{
         display: none;
+        .nav{
+            #mobileNavbar{
+                display: none;
+            }
+        }
     }
 }
 
