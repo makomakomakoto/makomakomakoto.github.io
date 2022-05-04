@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8fea), to(#7bebff));
+  background: linear-gradient(90deg, #ff8fea, #7bebff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input, form button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  margin: 0.1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+form input[type="number"] {
+  width: 75px;
+  text-align: center;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 1rem 0rem 1rem;
+  width: 46rem;
+}
+
+div.sort button {
+  font-size: 1rem;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+div.sort {
+  display: none;
+}
+
+section {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+section .todo .todo-text {
+  width: 30vw;
+  background-color: aliceblue;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+}
+
+section .todo .todo-time {
+  text-align: center;
+  width: 8vw;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+section .todo .complete {
+  text-align: center;
+  cursor: pointer;
+  background-color: #b2fab2;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+section .todo .delete {
+  text-align: center;
+  cursor: pointer;
+  background-color: #eb9292;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
