@@ -139,13 +139,13 @@ section.lobbySection{
 
                 h1{
                     padding: 1.5rem;
-                    font-size: 3rem;
+                    font-size: 2.75rem;
                     color: rgb(255, 209, 125);
                     font-weight: 0;
                     letter-spacing: 10px;
                 }
                 button{
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     border-style: dashed;
                     padding: 0rem 1rem;
                     color: $navbar-color;
@@ -188,7 +188,7 @@ section.aboutSection{
 
             h1{
                 color: $main-color;
-                font-size: 2rem;
+                font-size: 1.75rem;
             }
             .line{
                 width: 100%;
@@ -197,11 +197,11 @@ section.aboutSection{
             }
             p{
                 color: $news-bg;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             button{
                 width: 200px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 border-style: dashed;
                 padding: 0rem 1rem;
                 color: $main-color;
@@ -248,7 +248,7 @@ section.newSection{
             margin: 2rem;
             h1{
                 color: $link-hover;
-                font-size: 2rem;
+                font-size: 1.75rem;
             }
         }
         .row{
@@ -263,10 +263,10 @@ section.newSection{
                 flex-direction: column;
                 .card{
                     transition: all 0.25s ease-in-out;
-                    width: 320px;
+                    width: 250px;
                     height: 200px;
                     padding: 1rem;
-                    margin: 0 1rem 2rem 1rem;
+                    margin: 0 1rem 1rem 1rem;
                     background-color: $main-color;
                     box-shadow: rgb(55, 25, 0) 3px 3px 6px 0px inset, 
                                 rgba(55, 25, 0, 0.5) -3px -3px 6px 1px inset;
@@ -277,6 +277,7 @@ section.newSection{
                         transition: all 0.25s ease-in-out;
                     }
                     p{
+                        font-size: 0.95rem;
                         color: $link-hover;
                         transition: all 0.25s ease-in-out;
                     }
@@ -307,7 +308,7 @@ section.newSection{
 
 // introduce
 section.introduceSection{
-    height: 95vh;
+    min-height: 95vh;
     width: 100vw;
     .introduceOut{
         position: absolute;
@@ -364,7 +365,7 @@ section.introduceSection{
                     }
                     button{
                         width: 200px;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         border-style: dashed;
                         padding: 0rem 1rem;
                         color: $main-color;
@@ -419,8 +420,8 @@ section.introduceSection{
     }
 }
 
+//facility
 section.facilitySection{
-    // height: 80vh;
     width: 100vw;
     .facility{
         width: 100vw;
@@ -433,7 +434,7 @@ section.facilitySection{
             margin: 1.5rem;
             h1{
                 color: $link-hover;
-                font-size: 2rem;
+                font-size: 1.75rem;
             }
         }
         .row{
@@ -443,18 +444,18 @@ section.facilitySection{
             justify-content: space-around;
 
             .cardOut{
-                width: 300px;
-                height: 300px;
+                width: 280px;
+                height: 280px;
                 margin: 1rem;
                 .card{
                     position: absolute;
-                    width: 300px;
-                    height: 300px;
+                    width: 280px;
+                    height: 280px;
                     box-shadow: rgb(0, 0, 0) 3px 3px 3px 0px inset, 
                     rgba(0, 0, 0, 0.5) 3px 3px 3px 1px ;
                     .img{
                         position: relative;
-                        height: 300px;
+                        height: 280px;
                         img{
                             width: 100vw;
                             max-width: 100%;
@@ -467,10 +468,10 @@ section.facilitySection{
                         justify-content: center;
                         align-items: center;
                         position: absolute;
-                        height: 300px;
-                        width: 300px;
+                        height: 280px;
+                        width: 280px;
                         top: 0;
-                        font-size: 1.8rem;
+                        font-size: 1.5rem;
                         color: $navbar-color;
                         background-color: rgba(0, 0, 0, 0.567);
                         opacity: 0;
@@ -492,7 +493,7 @@ footer{
     width: 100vw;
     background-color: $news-bg;
     margin-top: 5rem;
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,7 +525,7 @@ footer{
                     height: 2.5vw;
                 }
                 p{
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     padding-left: 1rem;
                 }
             }
@@ -552,9 +553,9 @@ footer{
             justify-content: end;
             h4{
                 text-align: right;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 a{
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     color: $navbar-color;
                     transition: all 0.25s ease-in-out;
                 }
@@ -578,11 +579,11 @@ footer{
     
                     h1{
                         padding: 1rem;
-                        font-size: 2rem;
+                        font-size: 1.75rem;
                         letter-spacing: 8px;
                     }
                     button{
-                        font-size: 1rem;
+                        font-size: 0.75rem;
                         margin-bottom: 2rem;
                     }
                 }
@@ -664,7 +665,7 @@ footer{
                             height: 5vw;
                         }
                         p{
-                            font-size: 1.5rem;
+                            font-size: 1.25rem;
                             padding-left: 1rem;
                         }
                     }
@@ -742,7 +743,7 @@ footer{
 
 @media screen and (max-width: 728px) {
     section.introduceSection{
-        height: 95vh;
+        min-height: 95vh;
         width: 100vw;
         .introduceOut{
             position: absolute;
@@ -799,7 +800,7 @@ footer{
                         }
                         button{
                             width: 200px;
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                             border-style: dashed;
                             padding: 0rem 1rem;
                             color: $main-color;

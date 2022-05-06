@@ -15,8 +15,7 @@ $p:rgb(153, 153, 153);
 
 .title
 {
-    
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 0 auto 80px;
     position: relative;
@@ -43,7 +42,7 @@ $p:rgb(153, 153, 153);
 }
 .title2{
     margin-top: 5rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .btn
@@ -228,7 +227,7 @@ header{
             align-items: center;
             
             h3{
-                font-size: 1.75rem;
+                font-size: 1.5rem;
                 color: $p;
                 font-weight: 800;
                 padding: 1rem 0rem;
@@ -259,7 +258,7 @@ header{
 
                 h4{
                     display: flex;
-                    font-size: 1.5em;
+                    font-size: 1.25em;
                     color: $p;
                     font-weight: 800;
                 }
@@ -268,12 +267,12 @@ header{
                     cursor: pointer;
                 }
                 span{
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     color: $p;
                 }
                 p{
                     text-align: left;
-                    font-size: 1em;
+                    font-size: 0.75em;
                     color: $p;
                     font-weight: 500;
                 }
@@ -295,7 +294,7 @@ header{
 
                 h4{
                     display: flex;
-                    font-size: 1.5em;
+                    font-size: 1.25em;
                     color: $p;
                     font-weight: 800;
                 }
@@ -304,12 +303,12 @@ header{
                     cursor: pointer;
                 }
                 span{
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     color: $p;
                 }
                 p{
                     text-align: left;
-                    font-size: 1em;
+                    font-size: 0.75em;
                     color: $p;
                     font-weight: 500;
                 }
@@ -402,7 +401,7 @@ section{
             justify-content: center;
             align-items: center;
             width: 70vw;
-            height: 80vh;
+            height: 500px;
 
             .image{
                 flex:1 1 400px;
@@ -410,6 +409,7 @@ section{
                 justify-content: center;
                 position: relative;
                 z-index: 0;
+                height: 500px;
 
                 img{
                     max-width: 100%;
@@ -425,7 +425,7 @@ section{
                 padding: 20px 0;
                 margin: auto;
                 height: 500px;
-                min-height: 400px;
+                min-height: 500px;
                 flex: 1 1 400px;
                 display: flex;
                 justify-content: center;
@@ -445,7 +445,7 @@ section{
                     display: inline-block;
                     
                     span{
-                        font-size: 1.2em;
+                        font-size: 1rem;
                         font-weight: 800;
                         color: $p;
                         cursor: pointer;
@@ -579,6 +579,30 @@ footer{
         background: rgba(155, 155, 155, 0.815);
         height: 1px;
         margin: 20px 0;
+    }
+    .line{
+        width: 100vw;
+        height: 2px;
+        background-color: gray;
+    }
+    .author{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        h4{
+            text-align: right;
+            font-size: 1rem;
+            a{
+                font-size: 0.75rem;
+                color: $main-color;
+                transition: all 0.25s ease-in-out;
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(208, 208, 208);
+            }
+        }
     }
 }
 

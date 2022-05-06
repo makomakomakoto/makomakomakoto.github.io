@@ -9,7 +9,7 @@
 }
 
 .title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0 auto 80px;
   position: relative;
@@ -43,7 +43,7 @@
 
 .title2 {
   margin-top: 5rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -287,7 +287,7 @@ header .container .row2 .col-2 p {
 }
 
 .about-container .about-card .about-content h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #999999;
   font-weight: 800;
   padding: 1rem 0rem;
@@ -328,7 +328,7 @@ header .container .row2 .col-2 p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #999999;
   font-weight: 800;
 }
@@ -339,13 +339,13 @@ header .container .row2 .col-2 p {
 }
 
 .about-container .about-card .about-content .pp span {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #999999;
 }
 
 .about-container .about-card .about-content .pp p {
   text-align: left;
-  font-size: 1em;
+  font-size: 0.75em;
   color: #999999;
   font-weight: 500;
 }
@@ -382,7 +382,7 @@ header .container .row2 .col-2 p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #999999;
   font-weight: 800;
 }
@@ -393,13 +393,13 @@ header .container .row2 .col-2 p {
 }
 
 .about-container .about-card .about-content .abouts span {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #999999;
 }
 
 .about-container .about-card .about-content .abouts p {
   text-align: left;
-  font-size: 1em;
+  font-size: 0.75em;
   color: #999999;
   font-weight: 500;
 }
@@ -531,7 +531,7 @@ section .box .outBox {
       -ms-flex-align: center;
           align-items: center;
   width: 70vw;
-  height: 80vh;
+  height: 500px;
 }
 
 section .box .outBox .image {
@@ -546,6 +546,7 @@ section .box .outBox .image {
           justify-content: center;
   position: relative;
   z-index: 0;
+  height: 500px;
 }
 
 section .box .outBox .image img {
@@ -563,7 +564,7 @@ section .box .outBox .form-container {
   padding: 20px 0;
   margin: auto;
   height: 500px;
-  min-height: 400px;
+  min-height: 500px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 400px;
           flex: 1 1 400px;
@@ -593,7 +594,7 @@ section .box .outBox .form-container .form-btn {
 }
 
 section .box .outBox .form-container .form-btn span {
-  font-size: 1.2em;
+  font-size: 1rem;
   font-weight: 800;
   color: #999999;
   cursor: pointer;
@@ -758,6 +759,42 @@ footer hr {
   background: rgba(155, 155, 155, 0.815);
   height: 1px;
   margin: 20px 0;
+}
+
+footer .line {
+  width: 100vw;
+  height: 2px;
+  background-color: gray;
+}
+
+footer .author {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer .author h4 {
+  text-align: right;
+  font-size: 1rem;
+}
+
+footer .author h4 a {
+  font-size: 0.75rem;
+  color: #FFCCCC;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+footer .author h4 a:hover {
+  color: #d0d0d0;
 }
 
 @media screen and (max-width: 800px) {
