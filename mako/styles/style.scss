@@ -94,7 +94,7 @@ header{
                             transition: all 0.25s ease-in-out;
                         }
                         a:hover{
-                            color: #fff;
+                            color: #ff9e9e;
                         }
                     }
                 }
@@ -308,7 +308,7 @@ header{
                 }
                 p{
                     text-align: left;
-                    font-size: 0.75em;
+                    font-size: 1rem;
                     color: $p;
                     font-weight: 500;
                 }
@@ -318,7 +318,7 @@ header{
                     transition: all 0.25s ease-in-out;
                 }
                 a:hover{
-                    color: #ff4545;
+                    color: #ff9e9e;
                 }
                 iframe{
                     width: 600px;
