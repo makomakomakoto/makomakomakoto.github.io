@@ -581,6 +581,40 @@
     html{
       font-size: 75%;
     }
+    section.welcomeAni{
+      padding: 0;
+      position: absolute;
+      z-index: 1000;
+      min-height: 90vh;
+      min-width: 100%;
+      background-color: var(--main-color4);
+      animation: welAniBG 3s 0.5s;
+  
+      .welContainer{
+        
+      min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: welAniWord 1.5s;
+  
+        .welContent{
+          text-align: center;
+          h3{
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            color:rgb(0, 0, 0);
+          }
+          p{
+            font-size: 1rem;
+            font-weight: lighter;
+            line-height: 1.8;
+            padding:1rem 0;
+            color:rgb(0, 0, 0);
+          }
+        }
+      }
+    }
     main{
       .about{
         height: auto;

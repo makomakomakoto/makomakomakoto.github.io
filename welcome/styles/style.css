@@ -730,6 +730,45 @@ footer .contact .box-container .box .navbar__btn a {
   html {
     font-size: 75%;
   }
+  section.welcomeAni {
+    padding: 0;
+    position: absolute;
+    z-index: 1000;
+    min-height: 90vh;
+    min-width: 100%;
+    background-color: var(--main-color4);
+    -webkit-animation: welAniBG 3s 0.5s;
+            animation: welAniBG 3s 0.5s;
+  }
+  section.welcomeAni .welContainer {
+    min-height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: welAniWord 1.5s;
+            animation: welAniWord 1.5s;
+  }
+  section.welcomeAni .welContainer .welContent {
+    text-align: center;
+  }
+  section.welcomeAni .welContainer .welContent h3 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: black;
+  }
+  section.welcomeAni .welContainer .welContent p {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: black;
+  }
   main .about {
     height: auto;
   }
