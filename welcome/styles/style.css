@@ -565,9 +565,6 @@ footer .contact .box-container .box .navbar__btn a {
 
 /* media queries  */
 @media screen and (max-width: 960px) {
-  html {
-    font-size: 80%;
-  }
   section {
     padding: 2rem;
   }
