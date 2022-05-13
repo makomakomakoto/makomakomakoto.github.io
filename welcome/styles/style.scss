@@ -141,7 +141,7 @@
     z-index: 1000;
     min-height: 90vh;
     min-width: 100%;
-    background-color: var(--main-color4);
+    background-color: rgb(255, 255, 255);
     animation: welAniBG 3s 0.5s;
 
     .welContainer{
@@ -175,7 +175,7 @@
       transform: scale(0);
     }
     to{
-        transform: scale(1);
+      transform: scale(1);
     }
   }
 
@@ -358,39 +358,40 @@
           text-align: center;
           border:var(--main-color);
           margin:1.75rem;
-          
-          .image{
-            margin: 0.5rem 0;
-            transition: all 0.3s ease;
+          transition: all 0.3s ease;
 
+          a{
             .img{
               height: 250px;
               width: 250px;
+              overflow: hidden;
+                border-radius: 50px;
 
               img{
                 height: 250px;
                 max-width: 100%;
                 max-height: 100%;
-                border-radius: 50px;
                 object-fit: cover;
+                transition: all 0.25s ease;
               }
             }
-            .content{
-              h3{
-                margin-top: 1rem;
-                color:var(--iroiro);
-                font-size: 1.25rem;
-                transition: all 0.25s ease;
-              }
-              h3:hover{
-                color:var(--main-color);
-                transition: all 0.25s ease;
-              }
+            h3{
+              padding-top: 1rem;
+              color:var(--iroiro);
+              font-size: 1.25rem;
+              transition: all 0.25s ease;
             }
           }
-          .image:hover{
+          a:hover{
+            .img{
+              img{
+                transform: scale(1.1);
+              }
+            }
             h3{
               color:var(--main-color);
+              font-size: 1.25rem;
+              transition: all 0.25s ease;
             }
           }
         }
@@ -583,36 +584,9 @@
     }
     section.welcomeAni{
       padding: 0;
-      position: absolute;
-      z-index: 1000;
-      min-height: 90vh;
-      min-width: 100%;
-      background-color: var(--main-color4);
-      animation: welAniBG 3s 0.5s;
-  
+
       .welContainer{
-        
-      min-height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: welAniWord 1.5s;
-  
-        .welContent{
-          text-align: center;
-          h3{
-            font-size: 1.75rem;
-            text-transform: uppercase;
-            color:rgb(0, 0, 0);
-          }
-          p{
-            font-size: 1rem;
-            font-weight: lighter;
-            line-height: 1.8;
-            padding:1rem 0;
-            color:rgb(0, 0, 0);
-          }
-        }
+        min-height: 90vh;
       }
     }
     main{

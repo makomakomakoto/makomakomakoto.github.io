@@ -177,7 +177,7 @@ section.welcomeAni {
   z-index: 1000;
   min-height: 90vh;
   min-width: 100%;
-  background-color: var(--main-color4);
+  background-color: white;
   -webkit-animation: welAniBG 3s 0.5s;
           animation: welAniBG 3s 0.5s;
 }
@@ -495,44 +495,45 @@ main .portfolio .box-container .box {
   text-align: center;
   border: var(--main-color);
   margin: 1.75rem;
-}
-
-main .portfolio .box-container .box .image {
-  margin: 0.5rem 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-main .portfolio .box-container .box .image .img {
+main .portfolio .box-container .box a .img {
   height: 250px;
   width: 250px;
+  overflow: hidden;
+  border-radius: 50px;
 }
 
-main .portfolio .box-container .box .image .img img {
+main .portfolio .box-container .box a .img img {
   height: 250px;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-main .portfolio .box-container .box .image .content h3 {
-  margin-top: 1rem;
+main .portfolio .box-container .box a h3 {
+  padding-top: 1rem;
   color: var(--iroiro);
   font-size: 1.25rem;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
-main .portfolio .box-container .box .image .content h3:hover {
-  color: var(--main-color);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+main .portfolio .box-container .box a:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-main .portfolio .box-container .box .image:hover h3 {
+main .portfolio .box-container .box a:hover h3 {
   color: var(--main-color);
+  font-size: 1.25rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 footer {
@@ -732,42 +733,9 @@ footer .contact .box-container .box .navbar__btn a {
   }
   section.welcomeAni {
     padding: 0;
-    position: absolute;
-    z-index: 1000;
-    min-height: 90vh;
-    min-width: 100%;
-    background-color: var(--main-color4);
-    -webkit-animation: welAniBG 3s 0.5s;
-            animation: welAniBG 3s 0.5s;
   }
   section.welcomeAni .welContainer {
     min-height: 90vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-animation: welAniWord 1.5s;
-            animation: welAniWord 1.5s;
-  }
-  section.welcomeAni .welContainer .welContent {
-    text-align: center;
-  }
-  section.welcomeAni .welContainer .welContent h3 {
-    font-size: 1.75rem;
-    text-transform: uppercase;
-    color: black;
-  }
-  section.welcomeAni .welContainer .welContent p {
-    font-size: 1rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color: black;
   }
   main .about {
     height: auto;
