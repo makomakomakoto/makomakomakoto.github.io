@@ -129,13 +129,18 @@
               transition: all 0.3s ease;
             }
           }
-          
+          li.active{
+            .navbar__links{
+              color: #fff;
+              transition: all 0.3s ease;
+            }
+          }
         }
       }
     }
   }
 
-  section.welcomeAni{
+  div.welcomeAni{
     position: absolute;
     top: 80px;
     z-index: 1000;
@@ -262,7 +267,7 @@
         .imgcontainer:hover{
 
           img{
-            width: 32vw;
+            width: 30.5vw;
             transform: rotateY(360deg);
             transition: width 0.25s ease-in-out, transform 0.15s ease-in-out;
           }
@@ -305,6 +310,7 @@
     /*skill*/
     .skills{
       .skillCotainer{
+        min-height: 39vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -582,7 +588,7 @@
     html{
       font-size: 75%;
     }
-    section.welcomeAni{
+    div.welcomeAni{
       padding: 0;
 
       .welContainer{

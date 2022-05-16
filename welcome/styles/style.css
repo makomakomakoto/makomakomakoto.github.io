@@ -171,7 +171,13 @@ header .navbar .navbar__container .navbar__menu .navbar__item .navbar__links:hov
   transition: all 0.3s ease;
 }
 
-section.welcomeAni {
+header .navbar .navbar__container .navbar__menu li.active .navbar__links {
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+div.welcomeAni {
   position: absolute;
   top: 80px;
   z-index: 1000;
@@ -182,7 +188,7 @@ section.welcomeAni {
           animation: welAniBG 3s 0.5s;
 }
 
-section.welcomeAni .welContainer {
+div.welcomeAni .welContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,18 +202,18 @@ section.welcomeAni .welContainer {
           animation: welAniWord 1.5s;
 }
 
-section.welcomeAni .welContainer .welContent {
+div.welcomeAni .welContainer .welContent {
   text-align: center;
   padding-top: 15%;
 }
 
-section.welcomeAni .welContainer .welContent h3 {
+div.welcomeAni .welContainer .welContent h3 {
   font-size: 1.75rem;
   text-transform: uppercase;
   color: black;
 }
 
-section.welcomeAni .welContainer .welContent p {
+div.welcomeAni .welContainer .welContent p {
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.8;
@@ -370,7 +376,7 @@ main .about .row .imgcontainer .bg {
 }
 
 main .about .row .imgcontainer:hover img {
-  width: 32vw;
+  width: 30.5vw;
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
   -webkit-transition: width 0.25s ease-in-out, -webkit-transform 0.15s ease-in-out;
@@ -419,6 +425,7 @@ main .about .row .content p {
 }
 
 main .skills .skillCotainer {
+  min-height: 39vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,10 +738,10 @@ footer .contact .box-container .box .navbar__btn a {
   html {
     font-size: 75%;
   }
-  section.welcomeAni {
+  div.welcomeAni {
     padding: 0;
   }
-  section.welcomeAni .welContainer {
+  div.welcomeAni .welContainer {
     min-height: 90vh;
   }
   main .about {
