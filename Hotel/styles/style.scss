@@ -46,13 +46,21 @@ header{
                 flex-wrap: wrap;
 
                 li{
-                    margin: 1rem 2rem;
+                    padding: 1rem 2rem;
+                    transition: all 0.25s ease-in-out;
 
                     a.links{
                         color: $navbar-color;
                         transition: all 0.25s ease-in-out;
                     }
-                    a.links:hover{
+                    // a.links:hover{
+                    //     color: $link-hover;
+                    // }
+                }
+                li:hover{
+                    background-color: $main-color;
+
+                    a.links{
                         color: $link-hover;
                     }
                 }
@@ -80,14 +88,11 @@ header{
                 flex-wrap: wrap;
 
                 li{
-                    margin: 1rem 2rem;
+                    padding: 1rem 2rem;
+                    transition: all 0.25s ease-in-out;
 
                     a.links{
                         color: $navbar-color;
-                        transition: all 0.25s ease-in-out;
-                    }
-                    a.links:hover{
-                        color: $link-hover;
                     }
                     .btn{
                         border-style: dashed;
@@ -99,6 +104,13 @@ header{
                     .btn:hover{
                         box-shadow: inset 0 -3.25em 0 0 $link-hover;
                         color: $main-color;
+                    }
+                }
+                .noButton:hover{
+                    background-color: $main-color;
+
+                    a.links{
+                        color: $link-hover;
                     }
                 }
             }
@@ -364,6 +376,7 @@ section.introduceSection{
                         color: $news-bg;
                     }
                     button{
+                        z-index: 1000;
                         width: 200px;
                         font-size: 1rem;
                         border-style: dashed;
@@ -398,6 +411,7 @@ section.introduceSection{
                 background-color: rgba(0,0,0,0.4);
                 z-index:999;
                 margin: 0 2rem 2.5rem 1rem;
+                cursor: pointer;
 
                 span {
                     display: block;

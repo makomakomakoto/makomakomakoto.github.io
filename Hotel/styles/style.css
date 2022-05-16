@@ -57,7 +57,9 @@ header .navbar .nav1 ul {
 }
 
 header .navbar .nav1 ul li {
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 header .navbar .nav1 ul li a.links {
@@ -66,7 +68,11 @@ header .navbar .nav1 ul li a.links {
   transition: all 0.25s ease-in-out;
 }
 
-header .navbar .nav1 ul li a.links:hover {
+header .navbar .nav1 ul li:hover {
+  background-color: #492100;
+}
+
+header .navbar .nav1 ul li:hover a.links {
   color: #eeae79;
 }
 
@@ -105,17 +111,13 @@ header .navbar .nav2 ul {
 }
 
 header .navbar .nav2 ul li {
-  margin: 1rem 2rem;
-}
-
-header .navbar .nav2 ul li a.links {
-  color: #ff8d29;
+  padding: 1rem 2rem;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
-header .navbar .nav2 ul li a.links:hover {
-  color: #eeae79;
+header .navbar .nav2 ul li a.links {
+  color: #ff8d29;
 }
 
 header .navbar .nav2 ul li .btn {
@@ -131,6 +133,14 @@ header .navbar .nav2 ul li .btn:hover {
   -webkit-box-shadow: inset 0 -3.25em 0 0 #eeae79;
           box-shadow: inset 0 -3.25em 0 0 #eeae79;
   color: #492100;
+}
+
+header .navbar .nav2 ul .noButton:hover {
+  background-color: #492100;
+}
+
+header .navbar .nav2 ul .noButton:hover a.links {
+  color: #eeae79;
 }
 
 header .mobileNavbar {
@@ -499,6 +509,7 @@ section.introduceSection .introduceOut .introduceIn .contentBox .content p {
 }
 
 section.introduceSection .introduceOut .introduceIn .contentBox .content button {
+  z-index: 1000;
   width: 200px;
   font-size: 1rem;
   border-style: dashed;
@@ -543,6 +554,7 @@ section.introduceSection .introduceOut .LR .arrow {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
   margin: 0 2rem 2.5rem 1rem;
+  cursor: pointer;
 }
 
 section.introduceSection .introduceOut .LR .arrow span {
