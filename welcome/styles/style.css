@@ -567,6 +567,17 @@ footer .contact .box-container .box h3 {
   color: var(--main-color);
 }
 
+footer .contact .box-container .box .git {
+  color: var(--main-color);
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+footer .contact .box-container .box .git:hover {
+  color: var(--header-color);
+}
+
 footer .contact .box-container .box .navbar__btn a {
   font-size: 1.25rem;
 }

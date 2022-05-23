@@ -423,6 +423,14 @@
             font-size: 1.25rem;
             color:var(--main-color);
           }
+          .git{
+            color:var(--main-color);
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+          }
+          .git:hover{
+            color:var(--header-color);
+          }
           .navbar__btn{
             a{
               font-size: 1.25rem;
