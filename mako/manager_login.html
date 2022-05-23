@@ -28,7 +28,7 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="login">
         <div class="color"></div>
         <div class="color"></div>
         <div class="color"></div>
@@ -47,8 +47,14 @@
                         <span>管理員登入<hr id="Indicator1"></span>
                     </div>
                     <form action="" method="">  
-                        <input type="text" placeholder="帳號" class="input" name="managerName">
-                        <input type="password" placeholder="密碼" class="input" name="managerPassword">
+                        <div class="fieldBox">
+                            <input type="text" autocomplete="off" name="managerName" required>
+                            <label for="" class="label">帳號</label>
+                        </div>
+                        <div class="fieldBox">
+                            <input type="password" autocomplete="off" name="managerPassword" required>
+                            <label for="" class="label">密碼</label>
+                        </div>
                         <button type="submit" class="btn">登入</button>
                     </form>
                 </div>
