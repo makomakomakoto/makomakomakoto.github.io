@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mako">
+    <title>weather</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Joke</h1>
+        <hr>
+        <div id="list"></div>
+        <br>
+        <br>
+        <button id="jokeBtn">Get Joke!</button>
+        <br>
+        <p>From <a href="https://v2.jokeapi.dev/"> https://v2.jokeapi.dev/</a></p>
+    </div>
+</body>
+<script>
+    let list=document.getElementById("list");
+    let jokeBtn=document.getElementById("jokeBtn");
+
+    async function getJoke(){
+        let joke=await fetch("https://v2.jokeapi.dev/joke/Any");
+        let parsedData=await joke.json();
+        console.log(parsedData);
+        if(parsedData.type=="single"){
+            list.innerHTML=parsedData.joke;
+        }
+        else{
+            list.innerHTML="A : "+parsedData.setup+"<br><br>"+"B : "+parsedData.delivery;
+        }
+    }
+    jokeBtn.addEventListener('click', getJoke);
+
+</script>
+</html>
