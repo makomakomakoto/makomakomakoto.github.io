@@ -7,7 +7,7 @@ function menutoggle()
     if(mobileNavbar.style.maxHeight=="0px")
     {
         mobileNavbar.style.display="flex";
-        mobileNavbar.style.maxHeight="380px";
+        mobileNavbar.style.maxHeight="450px";
     }
     else
     {
